@@ -1,0 +1,13 @@
+addr data  label   opcode  operands
+---- ----  -----   ------  --------
+0000 0C00          ldi     r0 
+0001 0001                  $1 
+0002 0C09          ldi     r1 
+0003 0001                  $1 
+0004 0E01  loop    add     r0 r1 
+0005 0E08          add     r1 r0 
+0006 4400          cmi     r0 
+0007 0100                  $100 
+0008 2C00          brn     
+0009 0004                  loop 
+000A 3000          stop    
